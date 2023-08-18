@@ -1,24 +1,10 @@
 {
   "posts": [
     {
-      "id": 1,
-      "name": "Sebastian",
-      "username": "Eschweiler",
-      "timestamp": 1689925105809,
-      "text": "This is a test - 1."
-    },
-    {
-      "id": 2,
-      "name": "Daniel",
-      "username": "James",
-      "timestamp": 1689925143201,
-      "text": "This is a test - 2."
-    },
-    {
       "id": 3,
-      "name": "Lionel",
-      "username": "Hernandez",
-      "timestamp": 1689925103219,
+      "name": "Thomas",
+      "username": "Rice",
+      "timestamp": 1689925103271,
       "text": "This is a test - 3."
     },
     {

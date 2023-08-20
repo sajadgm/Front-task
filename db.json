@@ -1,18 +1,25 @@
 {
   "posts": [
     {
-      "id": 3,
+      "id": 0,
       "name": "Thomas",
       "username": "Rice",
-      "timestamp": 1689925103271,
-      "text": "This is a test - 3."
+      "timestamp": 1689925100271,
+      "text": "This is a test - 0."
     },
     {
-      "id": 4,
+      "id": 1,
       "name": "Thomas",
       "username": "Rice",
-      "timestamp": 1689925103271,
-      "text": "This is a test - 4."
+      "timestamp": 1689925101271,
+      "text": "This is a test - 1."
+    },
+    {
+      "id": 2,
+      "name": "Thomas",
+      "username": "Rice",
+      "timestamp": 1689925102271,
+      "text": "This is a test - 2."
     },
     {
       "id": 5,

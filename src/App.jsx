@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import Products from './shared/products';
 import './App.css'
 import './shared/products.scss';
+import './assets/scss/index.scss';
 
 
 function App() {
@@ -17,6 +18,8 @@ function App() {
 	const getData = async () => {
 		const res = await fetch('http://localhost:3000/posts');
 		const data = await res.json();
+		console.log(1);
+
 		setIsLoading(false)
 		return setMyData(data);
 	}
@@ -37,7 +40,7 @@ function App() {
 	return (
 		<>
 		{
-			!isLoading ? <Products data={myData} remove={removePost} setData={setMyData} /> : ''
+			!isLoading ? <Products data={myData} remove={removePost}  /> : ''
 		}
 		</>
 	)

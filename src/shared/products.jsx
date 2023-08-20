@@ -13,13 +13,6 @@ const  Products = (props) => {
         setIncommingData(props.data)
     },[props.data])
 
-    
-  
-
-    const likeCounter = (id) => {
-        return 1 + 4
-
-    }
 
     const date = (timeStamp) =>{
         return new Intl.DateTimeFormat('fa-IR', {year: 'numeric', month: '2-digit',day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit'}).format(timeStamp)
@@ -47,7 +40,7 @@ const  Products = (props) => {
                                 <div><AiOutlineEye size={22}/>2</div>
                                 <div><PiShareLight size={22}/>0</div>
                                 <div><LiaCommentAltSolid size={22}/>0</div>
-                                <div><FcLike size={22}/>{likeCounter(item.id)}</div>
+                                <div><FcLike size={22}/>2</div>
                             </div>
                             <div className="product-card__content--info--caption">
                                     <p>{date(item.timestamp)}</p>
@@ -56,7 +49,7 @@ const  Products = (props) => {
                         </div>
                     </section>
                     <section className='product-card__buttons'>
-                    <button onClick={() => props.remove(item.id)}>حذف پست</button>
+                    <button className='product-card__buttons--remove-btn' onClick={() => props.remove(item.id)}>حذف پست</button>
                     </section>
                 </div>
                 }) : ''}
